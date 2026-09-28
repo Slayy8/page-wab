@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Quuuuiiiiiiiiizzzzzzzz</title>
+        <script src="btsciel.js"></script>
+        <link rel="stylesheet" type="text/css" href="btsciel.css"> 
+    </head>
+    <body>
+        <H1>Mon questionnaire en html et JS</H1>
+        <nav>
+                <ul> <!--unordened liste-->
+                    <li><a href="tp_blog_v0.html">Accueil</a></li>
+                    <li>CV</li>
+                    <li>Liens utiles</li>
+                    <li>Formulaire (ici)</li>
+                </ul>
+            </nav>
+        <div id="quiz">
+        <form>
+            <p><label>En quelle année es-tu ? </label><br><input type="text" name="q1" id="q1" /><p>
+            <p><label>D.VA est présente dans quelle compo ? </label>
+            <br>
+            <input type="radio" name="q2" value="a" >Dive<br>
+            <input type="radio" name="q2" value="b" >Brawl<br>
+            <input type="radio" name="q2" value="c" >Poke<br>
+            <p><label>Quel prof pour le HTML/CSS ? </label>
+            <br>
+            <input type="radio" name="q3" value="a" >El Adli<br>
+            <input type="radio" name="q3" value="b" >Giroux<br>
+            <input type="radio" name="q3" value="c" >Nicoleau<br>
+            <p><label>Pile ou Face ? </label>
+            <br>
+            <input type="radio" name="q4" value="a" >Face<br>
+            <input type="radio" name="q4" value="b" >Pile<br>
+            <p><label>En quel mois es-tu ? </label><br><input type="text" name="q5" id="q5" /><p></p>
+        </form>
+        <button onclick="Valider()">Valider les réponses</button>
+        </div>
+        <br>
+        <div id="resultats"></div><br>
+        <div id="reponses"></div>
+    </body>
+</html>

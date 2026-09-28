@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--Indique que la page est en html 5-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="capteur.css">            <!--Indique le type de jeu de caractète utilisé-->
+        <script src="capteur.js"></script>
+        <title>Quiz Capteur</title>     <!--Il donne le titre de l'onglet-->   
+    </head>
+    <body>
+        <nav><a href=capteur.html>Page capteur</a></nav>
+        <section class=quiz>
+            <form>
+                <p><label>Qeul est l'éclairement maximal mesuré ?</label><br><input type="text" name="q1" id="q1" /><p>
+                <p><label>Quelle est la longueur d'onde principale ? </label>
+                <br>
+                <input type="radio" name="q2" value="a" >540 nm<br>
+                <input type="radio" name="q2" value="b" >530 nm<br>
+                <input type="radio" name="q2" value="c" >550 nm<br>
+                <p><label>Quel est l'alimentation du capteur ? </label>
+                <br>
+                <input type="radio" name="q3" value="a" >Omnivore<br>
+                <input type="radio" name="q3" value="b" >3,3 à 5,3 Vcc<br>
+                <input type="radio" name="q3" value="c" >3,3 à 5 Vcc<br>
+                <p><label>Quel est le temps de réponse du capteur ? </label>
+                <br>
+                <input type="radio" name="q4" value="a" >20 à 30ms<br>
+                <input type="radio" name="q4" value="b" >20 à 30ns<br>
+                <p><label>Avec quelle interface est compatible le capteur ? </label><br><input type="text" name="q5" id="q5" /><p></p>
+            </form>
+            <button onclick="Valider()">Valider les réponses</button>
+            <br>
+            <div id="resultats"></div><br>
+            <div id="reponses"></div>
+            <div id="bouton"><button type="button" onclick="Montrer()">Voir réponses</button></div>
+        </section>
+
+    </body>

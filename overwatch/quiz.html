@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="ow.css">
+        <title>OverWatch - Quiz</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>OverWatch</h1>
+            <p>Le site des fans du groupe de héros</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="perso.html">Personnages</a></li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li class="courant">Quiz</li>
+                <li><a href="liens.html">Liens</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Quiz : que savez-vous d'Overwatch ?</h2>
+
+            <!-- Le formulaire est lu par quiz.js au clic sur le bouton -->
+            <form id="quiz">
+
+                <fieldset>
+                    <legend>1. Quel est le vrai nom de Tracer ?</legend>
+                    <label><input type="radio" name="q1" value="a"> Lena Oxton</label>
+                    <label><input type="radio" name="q1" value="b"> Hana Song</label>
+                    <label><input type="radio" name="q1" value="c"> Angela Ziegler</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Quel est le rôle de D.Va ?</legend>
+                    <label><input type="radio" name="q2" value="a"> Soutien</label>
+                    <label><input type="radio" name="q2" value="b"> Tank</label>
+                    <label><input type="radio" name="q2" value="c"> Dégâts</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. De quel pays D.Va est-elle originaire ?</legend>
+                    <label><input type="radio" name="q3" value="a"> Japon</label>
+                    <label><input type="radio" name="q3" value="b"> Chine</label>
+                    <label><input type="radio" name="q3" value="c"> Corée du Sud</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Quelle capacité de Tracer lui permet de revenir en arrière ?</legend>
+                    <label><input type="radio" name="q4" value="a"> Blink</label>
+                    <label><input type="radio" name="q4" value="b"> Recall</label>
+                    <label><input type="radio" name="q4" value="c"> Pulse Bomb</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Quelle crise a mené à la création d'Overwatch ?</legend>
+                    <label><input type="radio" name="q5" value="a"> La crise des Omniaques</label>
+                    <label><input type="radio" name="q5" value="b"> La crise des Mechas</label>
+                    <label><input type="radio" name="q5" value="c"> La crise des Nations</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Qui a dirigé Overwatch comme commandant ?</legend>
+                    <label><input type="radio" name="q6" value="a"> Winston</label>
+                    <label><input type="radio" name="q6" value="b"> Reinhardt Wilhelm</label>
+                    <label><input type="radio" name="q6" value="c"> Jack Morrison</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>7. Comment s'appelle la division secrète d'Overwatch ?</legend>
+                    <label><input type="radio" name="q7" value="a"> Blackwatch</label>
+                    <label><input type="radio" name="q7" value="b"> Shadowwatch</label>
+                    <label><input type="radio" name="q7" value="c"> Nightwatch</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>8. Quelle entreprise a créé le jeu ?</legend>
+                    <label><input type="radio" name="q8" value="a"> Valve</label>
+                    <label><input type="radio" name="q8" value="b"> Riot Games</label>
+                    <label><input type="radio" name="q8" value="c"> Blizzard Entertainment</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>9. De quel type de jeu s'agit-il ?</legend>
+                    <label><input type="radio" name="q9" value="a"> Un jeu de tir en équipe avec des héros</label>
+                    <label><input type="radio" name="q9" value="b"> Un jeu de course</label>
+                    <label><input type="radio" name="q9" value="c"> Un jeu de stratégie au tour par tour</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>10. Quel est l'ultime de D.Va ?</legend>
+                    <label><input type="radio" name="q10" value="a"> Pulse Bomb</label>
+                    <label><input type="radio" name="q10" value="b"> Defense Matrix</label>
+                    <label><input type="radio" name="q10" value="c"> Self-Destruct</label>
+                </fieldset>
+
+                <button type="button" id="valider">Voir mon score</button>
+            </form>
+
+            <!-- Rempli par quiz.js -->
+            <p id="resultat"></p>
+        </main>
+
+        <footer>
+            <p>Site de fans réalisé pour s'entraîner. OverWatch appartient à Blizzard.</p>
+        </footer>
+
+        <script src="quiz.js"></script>
+    </body>
+</html>

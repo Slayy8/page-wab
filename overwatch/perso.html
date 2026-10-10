@@ -1,21 +1,105 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="ow.css">      
-        <title>OverWatch</title>   
+        <link rel="stylesheet" type="text/css" href="ow.css">
+        <title>OverWatch - Personnages</title>
     </head>
     <body>
-        <section>
-            <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="accueil.html">Accueil</a></li>
-                    <li>Personnages (ici)</li>
-                    <li><a href="histoire.html">Histoire</a></li>
-                </ul>
-            </nav>
-            </div>
-        </section>
+        <header>
+            <h1>OverWatch</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li class="courant">Personnages</li>
+                <li><a href="histoire.html">Histoire</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="liens.html">Liens</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Les personnages</h2>
+            <p>Trois héros, trois façons de jouer.</p>
+
+            <section class="fiche">
+                <img src="images/dva.jpg" alt="Portrait de D.Va">
+                <div>
+                    <h3>D.Va</h3>
+                    <p>Hana Song, ancienne joueuse pro, pilote un mécha de combat.</p>
+                    <ul>
+                        <li>Turboréacteurs : vol en ligne droite</li>
+                        <li>Matrice défensive : bouclier contre les projectiles</li>
+                        <li>Micro-missiles : une volée de roquettes explosives</li>
+                        <li>Autodestruction : ultime, le mécha explose</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="fiche">
+                <img src="images/tracer.jpg" alt="Portrait de Tracer">
+                <div>
+                    <h3>Tracer</h3>
+                    <p>Lena Oxton, pilote britannique, se déplace à toute vitesse dans le temps.</p>
+                    <ul>
+                        <li>Transfert : dash dans la direction choisie</li>
+                        <li>Rappel : retour en arrière de quelques secondes</li>
+                        <li>Bombe à impulsion : ultime, bombe collante</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="fiche">
+                <img src="images/wuyang.jpg" alt="Portrait de Wuyang">
+                <div>
+                    <h3>Wuyang</h3>
+                    <p>Wuyang Ye, étudiant chinois à l'école de l'eau,  </p>
+                    <ul>
+                        <li>Ruée torrentielle : surf sur l'eau pour aller plus vite et sauter plus haut</li>
+                        <li>Vague protectrice : vague qui amplifie les soins reçus par les alliés et repousse les adversaires</li>
+                        <li>Vague détonante : bulle d'eau protectrice qui éclate et soigne</li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2>Comparatif</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Héros</th>
+                        <th>Rôle</th>
+                        <th>Origine</th>
+                        <th>Ultime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>D.Va</td>
+                        <td>Tank</td>
+                        <td>Corée du Sud</td>
+                        <td>Autodestruction</td>
+                    </tr>
+                    <tr>
+                        <td>Tracer</td>
+                        <td>Dégâts</td>
+                        <td>Royaume-Uni</td>
+                        <td>Bombe à impulsion</td>
+                    </tr>
+                    <tr>
+                        <td>Wuyang</td>
+                        <td>Soutien</td>
+                        <td>Chine</td>
+                        <td>Vague détonante</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <p>Site fait pour les études seulement.</p> 
+        </footer>
+
     </body>
 </html>

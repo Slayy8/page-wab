@@ -1,46 +1,36 @@
-// Bonnes réponses : une lettre par question (q1 à q10)
-const bonnesReponses = {
-    q1: "a",
-    q2: "b",
-    q3: "c",
-    q4: "b",
-    q5: "a",
-    q6: "c",
-    q7: "a",
-    q8: "c",
-    q9: "a",
-    q10: "c"
-};
-
-const bouton = document.getElementById("valider");
-const resultat = document.getElementById("resultat");
-
-// Calcule le score quand on clique sur le bouton
-function corriger() {
-    let score = 0;
-    let repondues = 0;
-    const total = Object.keys(bonnesReponses).length;
-
-    // On parcourt chaque question
-    for (const question in bonnesReponses) {
-        // On cherche le bouton radio coché pour cette question
-        const choix = document.querySelector('input[name="' + question + '"]:checked');
-
-        if (choix !== null) {
-            repondues++;
-            if (choix.value === bonnesReponses[question]) {
-                score++;
-            }
-        }
-    }
-
-    // On vérifie que tout est rempli avant d'afficher le score
-    if (repondues < total) {
-        resultat.textContent = "Il reste " + (total - repondues) + " question(s) sans réponse.";
-        return;
-    }
-
-    resultat.textContent = "Votre score : " + score + " / " + total;
+let fini = "False";
+function Valider() {
+    let compteur=0;
+    let r1 = document.querySelector('input[name=q1]:checked').value;
+    let r2 = document.querySelector('input[name=q2]:checked').value;
+    let r3 = document.querySelector('input[name=q3]:checked').value;
+    let r4 = document.querySelector('input[name=q4]:checked').value;
+    let r5 = document.querySelector('input[name=q5]:checked').value;
+    let r6 = document.querySelector('input[name=q6]:checked').value;
+    let r7 = document.querySelector('input[name=q7]:checked').value;
+    let r8 = document.querySelector('input[name=q8]:checked').value;
+    let r9 = document.querySelector('input[name=q9]:checked').value;
+    let r10 = document.querySelector('input[name=q10]:checked').value;
+    if (r1=='a') {
+        compteur++;} 
+    if (r2=='b') {
+        compteur++;}
+    if (r3=='c') {
+        compteur++;}
+    if (r4=="b") {
+        compteur++;}
+    if (r5=="a") {
+        compteur++;}
+    if (r6=="c") {
+        compteur++;}
+    if (r7=="a") {
+        compteur++;}
+    if (r8=="c") {
+        compteur++;}
+    if (r9=="a") {
+        compteur++;}
+    if (r10=="c") {
+        compteur++;}
+    document.getElementById('resultat').innerHTML="Vous avez "+compteur+" bonne(s) réponse(s) sur 10";
+    fini = "True";
 }
-
-bouton.addEventListener("click", corriger);

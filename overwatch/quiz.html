@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="ow.css">
+        <link rel="stylesheet" href="ow.css">
         <title>OverWatch - Quiz</title>
     </head>
     <body>
@@ -48,9 +48,9 @@
 
             <section class="choix">
                 <p>4. Quelle capacité de Tracer lui permet de revenir en arrière ?</p>
-                <label><input type="radio" name="q4" value="a"> Blink</label>
-                <label><input type="radio" name="q4" value="b"> Recall</label>
-                <label><input type="radio" name="q4" value="c"> Pulse Bomb</label>
+                <label><input type="radio" name="q4" value="a"> Transfert</label>
+                <label><input type="radio" name="q4" value="b"> Rappel</label>
+                <label><input type="radio" name="q4" value="c"> Bombe à impulsion</label>
             </section>
 
             <section class="choix">
@@ -68,7 +68,7 @@
             </section>
 
             <section class="choix">
-                <legend>7. Comment s'appelle la division secrète d'Overwatch ?</p>
+                <p>7. Comment s'appelle la division secrète d'Overwatch ?</p>
                 <label><input type="radio" name="q7" value="a"> Blackwatch</label>
                 <label><input type="radio" name="q7" value="b"> Shadowwatch</label>
                 <label><input type="radio" name="q7" value="c"> Nightwatch</label>
@@ -90,15 +90,14 @@
 
             <section class="choix">
                 <p>10. Quel est l'ultime de D.Va ?</p>
-                <label><input type="radio" name="q10" value="a"> Pulse Bomb</label>
-                <label><input type="radio" name="q10" value="b"> Defense Matrix</label>
-                <label><input type="radio" name="q10" value="c"> Self-Destruct</label>
+                <label><input type="radio" name="q10" value="a"> Bombe à impulsion</label>
+                <label><input type="radio" name="q10" value="b"> Matrice défensive</label>
+                <label><input type="radio" name="q10" value="c"> Autodestruction</label>
             </section>
 
-            <button type="button" id="valider">Voir mon score</button>
+            <button type="button" onclick="Valider()">Voir mon score</button>
         </form>
 
-        <!-- Rempli par quiz.js -->
         <p id="resultat"></p>
 
         <footer>

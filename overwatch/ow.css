@@ -1,155 +1,96 @@
-/* ---------- Réglages généraux ---------- */
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #1b2733;
     color: #f2f2f2;
-    line-height: 1.5;
 }
 
 a {
     color: #f99e1a;
 }
 
-/* ---------- En-tête ---------- */
 header {
-    padding: 24px 16px;
+    padding: 24px;
     text-align: center;
     background-color: #111a22;
     border-bottom: 4px solid #f99e1a;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.4rem;
     color: #f99e1a;
 }
 
-header p {
-    margin: 4px 0 0;
-}
-
-/* ---------- Menu ---------- */
 nav ul {
-    display: flex;               /* met les éléments en ligne */
+    display: flex;      /*Pour tout mettre sur une ligne et non en étage*/
     justify-content: center;
-    flex-wrap: wrap;             /* passe à la ligne sur petit écran */
-    gap: 8px;
-    margin: 0;
-    padding: 12px;
-    list-style: none;            /* enlève les puces */
+    list-style: none;       /*Pour enlever les points*/
     background-color: #243342;
 }
 
 nav li {
-    padding: 8px 16px;
+    padding: 16px;
     border-radius: 4px;
 }
 
 nav a {
-    text-decoration: none;
     color: #f2f2f2;
 }
 
-nav li:hover {
-    background-color: #33475b;
+nav li:hover {      /*Pour changer les parties des listes quand on est dessus*/
+    background-color: #111e2b;
 }
 
-/* Page courante */
-nav li.courant {
+nav li.actuel {
     background-color: #f99e1a;
     color: #111a22;
     font-weight: bold;
-}
-
-/* ---------- Contenu ---------- */
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px 16px;
 }
 
 h2 {
     color: #f99e1a;
 }
 
-/* ---------- Fiches personnages ---------- */
 .fiche {
     display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-bottom: 20px;
+    gap: 20px;      /*Pour pas que le texte soit collé à l'image*/
+    margin-bottom: 20px;        /*Pour séparer chaque fiche*/
     padding: 16px;
-    background-color: #243342;
+    background-color: #293e52;
     border-left: 4px solid #f99e1a;
 }
 
 .fiche img {
     width: 160px;
     height: 160px;
-    object-fit: cover;           /* évite de déformer l'image */
-    background-color: #33475b;   /* visible tant que l'image n'existe pas */
+    object-fit: cover;      /*Seule solution pour pas déformer l'image de WuYang*/
 }
 
-.fiche h3 {
-    margin-top: 0;
-}
-
-/* ---------- Tableau ---------- */
 table {
-    width: 100%;
-    border-collapse: collapse;   /* fusionne les bordures */
+    width: 100%;        /*Pour prendre toute la largeur*/
+    border-collapse: collapse;      /*Pour tout coller*/
 }
 
-th,
 td {
     padding: 10px;
-    text-align: left;
-    border: 1px solid #33475b;
+    text-align: center;
+    border: 1px solid #182f44;
+    background-color: #132335;
 }
 
 th {
     background-color: #f99e1a;
     color: #111a22;
+    border: 1px solid #293e52;
 }
 
-tbody tr:nth-child(even) {
-    background-color: #243342;   /* une ligne sur deux */
-}
-
-/* ---------- Pied de page ---------- */
 footer {
     padding: 16px;
     text-align: center;
     background-color: #111a22;
-    font-size: 0.9rem;
 }
 
-/* ---------- Petits écrans ---------- */
-@media (max-width: 600px) {
-    .fiche {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* ---------- Accueil : bannière ---------- */
 .banniere {
-    display: block;
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    background-color: #33475b;   /* visible tant que l'image n'existe pas */
-}
-
-/* ---------- Histoire : chronologie ---------- */
-.chronologie {
-    padding-left: 24px;
+    height: 300px;
+    object-fit: cover;      /*Même raison que pour l'image de WuYang*/
 }
 
 .chronologie li {
@@ -158,55 +99,25 @@ footer {
 }
 
 .chronologie h3 {
-    margin: 0 0 4px;
+    margin: 8px;
     color: #f99e1a;
 }
 
-.chronologie p {
-    margin: 0;
-}
-
-/* ---------- Quiz ---------- */
-fieldset {
+.choix {
     margin-bottom: 16px;
-    padding: 12px 16px;
+    padding: 16px;
     border: 1px solid #33475b;
     background-color: #243342;
 }
 
-legend {
-    padding: 0 8px;
-    font-weight: bold;
-}
-
-fieldset label {
-    display: block;              /* un choix par ligne */
-    padding: 4px 0;
-    cursor: pointer;
+.choix label {
+    display: block;     /*Pour avoir qu'un choix par ligne*/
+    padding: 4px;
 }
 
 button {
-    padding: 10px 24px;
-    border: none;
-    border-radius: 4px;
+    padding: 10px;
     background-color: #f99e1a;
     color: #111a22;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ffb54a;
-}
-
-#resultat {
-    margin-top: 16px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-/* ---------- Liens ---------- */
-.liens li {
-    margin-bottom: 12px;
+    font-size: 16px;
 }

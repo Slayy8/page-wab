@@ -31,6 +31,6 @@ function Valider() {
         compteur++;}
     if (r10=="c") {
         compteur++;}
-    document.getElementById('resultat').innerHTML="Vous avez "+compteur+" bonne(s) réponse(s) sur 10";
+    document.getElementById('resultat').innerHTML="Vous avez "+compteur+" bonne(s) réponse(s) sur 10.";
     fini = "True";
 }
